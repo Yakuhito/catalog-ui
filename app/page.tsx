@@ -1,101 +1,27 @@
-import Image from "next/image";
+import { Logo } from '@/components/Logo'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="min-h-screen bg-white">
+      <div className="container mx-auto px-4 py-16">
+        <div className="flex flex-col items-center">
+          <Logo className="w-32 h-32 mb-8" />
+          <div className="max-w-4xl text-left space-y-6">
+            <p>
+            Benvinguts a CATalog, el registre descentralitzat que redefinirà la manera en què es indexen, verifiquen i gestionen els tokens i aplicacions de Chia. Dissenyat per a l'arquitectura basada en monedes única de la blockchain de Chia, CATalog està creat per oferir una solució descentralitzada, segura i escalable per gestionar metadades d'actius i entrades de registre. Aquesta plataforma innovadora representa un pas endavant significatiu per habilitar un ecosistema robust per a les aplicacions descentralitzades (dApps) basades en Chia.
+            </p>
+            <p>
+            La història de CATalog comença amb el problema de la unicitat: un repte que durant molt de temps ha impedit el desenvolupament d'aplicacions descentralitzades complexes a Chia. A diferència de les blockchains tradicionals que es basen en sistemes basats en comptes i mapatges, el model de monedes de Chia requereix mètodes únics i eficients per rastrejar i verificar les entrades d'actius. CATalog supera aquests reptes amb solucions avançades com sistemes de registre basats en ranures, permetent una escalabilitat sense problemes i una integritat sense igual.
+            </p>
+            <p>
+            Permetent als emissors de tokens gestionar directament les seves entrades, CATalog assegura que el registre es mantingui descentralitzat i fiable. A diferència de les solucions centralitzades, que depenen del control i l'administració de tercers, CATalog aprofita el mecanisme de consens de Chia per oferir un registre immutable i resistent a la censura. Això significa que les entrades, actualitzacions i verificacions es duen a terme a la cadena, donant poder a la comunitat per construir i interactuar amb confiança.
+            </p>
+            <p>
+            CATalog es llançarà el 2025, portant amb si una nova era de possibilitats per als usuaris i desenvolupadors de Chia. Estigueu atents a les novetats i prepareu-vos per experimentar un sistema de registre descentralitzat dissenyat per escalar amb el futur de la tecnologia blockchain.
+            </p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      </div>
+    </main>
+  )
 }
