@@ -6,7 +6,7 @@ export default function Home() {
       <div className="container mx-auto px-4 py-16">
         <div className="flex flex-col items-center">
           <Logo className="w-32 h-32 mb-8" />
-          <div className="max-w-4xl text-left space-y-6">
+          <div className="max-w-4xl text-left text-gray-900 space-y-6">
             <p>
             Benvinguts a CATalog, el registre descentralitzat que redefinirà la manera en què es indexen, verifiquen i gestionen els tokens i aplicacions de Chia. Dissenyat per a l&aposarquitectura basada en monedes única de la blockchain de Chia, CATalog està creat per oferir una solució descentralitzada, segura i escalable per gestionar metadades d&aposactius i entrades de registre. Aquesta plataforma innovadora representa un pas endavant significatiu per habilitar un ecosistema robust per a les aplicacions descentralitzades (dApps) basades en Chia.
             </p>
